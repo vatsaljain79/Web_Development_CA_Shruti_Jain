@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .home {
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        a {
+            text-decoration: None;
+
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+            padding: 20px;
+        }
+
+        .scr {
+            display: flex;
+            background-color: white;
+            z-index: 1;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+
+
+            top: 0px;
+
+
+            width: 100%;
+
+
+        }
+
+        ul a {
+            color: rgb(79, 77, 77);
+
+        }
+
+        .namee {
+            font-weight: bold;
+            font-size: 23px;
+
+        }
+
+        .navig {
+            font-size: 19px;
+
+        }
+
+        .navig:hover {
+
+            text-decoration: underline;
+
+        }
+
+        p a {
+
+            float: right;
+            background-color: rgb(45, 133, 164);
+            border-radius: 43px;
+            width: 218px;
+            height: 34px;
+            padding-top: 16px;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            position: sticky;
+        }
+
+        p a:hover {
+            background-color: rgb(142, 202, 225);
+        }
+
+        .cover {
+
+            background-image: url("backgr.webp");
+
+            background-size: 100%;
+            height: 925px;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.9;
+            font-size: 80px;
+            color: wheat;
+        }
+
+        /* .qw {
+            font-size: 78px;
+            color: red;
+        } */
+
+        .know {
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+            margin-top: 7px;
+            padding-top: 421px;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .hello {
+            text-align: center;
+            font-size: 23px;
+            color: rgb(255, 64, 0);
+            padding: 0px 20px;
+        }
+
+        .btn1,
+        .btn2 {
+
+            cursor: pointer;
+            padding-left: 0px;
+            font-size: 23px;
+            border: 2px solid green;
+            width: 164px;
+            height: 51px;
+            border-radius: 27px;
+            color: red;
+            background-image: url('backgr.webp');
+            opacity: 0.9;
+            background-size: cover;
+            background-attachment: scroll;
+
+        }
+
+        .btn1 {
+            margin-left: 513px;
+        }
+
+        .btn1:hover {
+            color: rgb(90, 90, 2);
+        }
+
+        .btn2:hover {
+            color: rgb(90, 90, 2);
+        }
+
+        .qw {
+            width: 40%;
+            padding-left: 194px;
+            display: inline-block;
+        }
+
+        .heading {
+            font-size: 58px;
+            text-align: left;
+            font-weight: bold;
+
+        }
+
+        .headding {
+            font-size: 31px;
+            text-align: right;
+        }
+
+        .para {
+            font-size: 22px;
+            text-align: justify;
+            /* display: flex; */
+        }
+
+        .mylogos {
+            /* width: 40%; */
+            height: 900px;
+            /* float: right; */
+            display: inline-block;
+            width: 600px;
+            margin-left: 20px;
+        }
+
+        .btn3,
+        .btn4 {
+            float: right;         
+            text-align: center;
+            cursor: pointer;
+            padding: 12px;
+            margin: 8px;
+            border: 2px solid green;
+            border-radius: 31px;
+            width: 113px;
+            height: 42px;
+            color: rgb(2, 98, 98);
+
+        }
+
+        .btn3:hover,
+        .btn4:hover {
+            color: white;
+            background-color: cyan;
+        }
+
+        .head {
+            text-align: center;
+            font-weight: bold;
+            font-size: 52px;
+        }
+
+        .left {
+            width: 40%;
+            padding-left: 194px;
+            display: inline-block;
+        }
+
+        .right {
+            width: 40%;
+            display: inline-block;
+            margin-left: 20px;
+
+            /* padding-right: 194px; */
+        }
+
+        .article {
+            width: 600px;
+            height: 400px;
+        }
+
+        .one {
+            text-align: center;
+            font-size: 30px;
+            color: grey;
+        }
+
+        .content {
+            text-align: justify;
+            color: gray;
+            font-size: 21px;
+        }
+
+        .btn5,
+        .btn6 {
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            padding: 12px;
+            margin: 8px;
+            margin-left: 220px;
+            border: 2px solid green;
+            border-radius: 31px;
+            width: 113px;
+            height: 42px;
+            color: rgb(2, 98, 98);
+            font-size: 15px;
+
+        }
+
+        .btn5:hover,
+        .btn6:hover {
+            color: white;
+            background-color: cyan;
+        }
+
+        .contacts {
+            background-color: #f7f6f0;
+        }
+
+        .chead {
+            font-size: 52px;
+            color: cyan;
+            text-align: center;
+            /* border: 2px solid rebeccapurple; */
+            /* width: 60%; */
+            justify-content: center;
+            margin: 0px 256px;
+            font-weight: bold;
+        }
+
+        .ccontent {
+            text-align: center;
+            justify-content: center;
+            font-size: 19px;
+        }
+
+        .forms {
+            justify-content: center;
+            text-align: center;
+            /* display: flex   ; */
+            /* margin: 10px; */
+        }
+
+        .firstname input {
+            width: 550px;
+            height: 36px;
+            margin: 10px;
+            display: inline-block;
+            /* margin: 10px; */
+        }
+
+        .lastname input {
+            width: 550px;
+            height: 36px;
+            margin: 10px;
+            display: inline-block;
+            /* margin: 10px; */
+        }
+
+        .email input {
+            width: 75%;
+            height: 36px;
+            margin: 10px;
+        }
+
+        .msg textarea {
+            width: 75%;
+            margin: 10px;
+        }
+
+        .forms {
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        .combine {
+            margin: 10px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .btn7 {
+            float: right;
+            margin-right: 186px;
+            height: 39px;
+            width: 100px;
+            border-radius: 47px;
+            background-color: cyan;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scr">
+        <div class="nav">
+            <a href="http://www.myplanca.com/"><img src="ca logo.webp" alt="" class="logo"></a>
+        </div>
+        <div class="home">
+            <ul class="navbar">
+                <li class="namee"><a href="http://www.myplanca.com/">My Plan CA</a></li>
+                <li><a class="navig" href="http://www.myplanca.com/">Home</a></li>
+                <li><a class="navig" href="#qw">About</a></li>
+                <li><a class="navig" href="http://www.myplanca.com/services">Services</a></li>
+                <li><a class="navig" href="http://www.myplanca.com/faq">FAQ</a></li>
+                <li><a class="navig" href="#contacts">Contact us</a></li>
+            </ul>
+        </div>
+        <p class="book"> <a href="#contacts">Book An Appointment</a></p>
+    </div>
+    <div class="cover">
+        <h1 class="know">
+            I KNOW, I WILL BE A CHARTERED ACCOUNTANT
+        </h1>
+        <p class="hello">
+            As your Mentor, we can help you tap into your inner strengths and discover your true potential. Getting you
+            motivated & stress free is our main focus. We provide subject wise planned schedule, personalized guidance &
+            support throughout CA studies.
+        </p>
+        <button class="btn1">Get Started</button>
+        <button class="btn2">Contact us</button>
+    </div>
+    <div class="qw" id="qw">
+        <p class="heading">
+            We provide 100% success proven scheduled plan for every CA Aspirants.
+        </p>
+        <p class="headding">
+            Also, customized plans available after consulting with the mentor.
+        </p>
+        <p class="para">
+            We believe in solution-focused mentorship, we can help you get out of a mental rut and make you focus on
+            your target. “A positive mental attitude is the starting point of all riches, whether they be riches of a
+            material nature or Intangible riches” said by Napoleon Hill.
+        </p>
+        <p class="para">My plan CA provides the strategies and plan opted by rankers and top scorers in CA exams for ca
+            final level. This plan is about the preparation in the last 5 months before the exam corresponding with the
+            test series</p>
+        <p class="para">This plan includes that one should give almost 9-11 days for each subject in first revision and
+            giving test series simultaneously, following the same again in 6-5 days and then finally reducing it to 3
+            days. These three revisions and test series should be completed at least 20 days before exams. Then in last
+            20 days how one should plan study for all subjects giving 2 days for each and then finally what should be
+            the strategy in exam days. Hope My Plan CA brightens your dream.</p>
+        <button class="btn3">Book Now</button>
+        <button class="btn4">View Services</button>
+    </div>
+    <img src="logos.webp" class="mylogos">
+
+    <p class="head">My Plan CA : A Support in CA Journey</p>
+    <div class="support">
+        <div class="left">
+            <img src="articleship.webp" class="article">
+            <p class="leftcontent">
+            <p class="one">
+                Selecting Articleship Firm
+            </p>
+            <p class="content">
+                Articleship is the building block of CA Student journey as it involves practical exposure to the
+                theoretical learnings of the course.
+            </p>
+            <p class="content">Choosing a right CA Firm for articleship is tough row to hoe as it involves too much
+                considerations in making right decision.</p>
+            <p class="content">Here we are discussing some nuts & bolts to consider while choosing articleship firm.
+            </p>
+            <button class="btn5">
+                Learn More
+            </button>
+            </p>
+        </div>
+        <div class="right">
+            <img src="plan.webp" class="article">
+            <p class="leftcontent">
+            <p class="one">
+                Planning CA Studies
+            </p>
+            <p class="content">Have you heard the phrase “success comes to those who work”?
+                This is most likely true. But there's one other ingredient that is absolutely crucial to success i.e.
+                PLANNING & Executing rightly.</p>
+            <p class="content">My plan CA provides the strategies and plan opted by rankers and top scorers in CA exams
+                for ca final level. This plan is about the preparation in the last 5 months before the exam
+                corresponding with the test series.</p>
+            <button class="btn6">
+                Learn More
+            </button>
+            </p>
+        </div>
+    </div>
+    <div class="contacts" id="contacts">
+        <p class="chead">Take guidance of mentor to set your environment up for success</p>
+        <p class="ccontent">Ask your problems, we will provide the best possible solution. <br>
+            Mention your mobile number so Mentor can get in touch with you.</p>
+        <form action="/action.php" class="forms">
+            <div class="combine">
+                <div class="firstname">
+                    <label for="name">First Name*</label><br>
+                    <input type="text" placeholder="Enter your First Name" />
+                </div>
+                <div class="lastname">
+                    <label for="name">Last Name*</label><br>
+                    <input type="text" placeholder="Enter your Last Name" />
+                </div>
+            </div>
+            <div class="email">
+                <label for="name">Email*</label><br>
+                <input type="text" placeholder="Enter your Email" />
+            </div>
+            <div class="msg">
+                <label for="name">Message*</label><br>
+                <textarea name="Message" id="message" class="msg" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn7">Submit</button>
+    </div>
+
+</body>
+
+</html>
